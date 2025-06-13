@@ -1,0 +1,34 @@
+.array-container {
+  position: absolute;
+  left: 100px;
+  right: 100px;
+  bottom: 50px; /* so it’s nicely aligned */
+  display: flex;
+  align-items: flex-end;
+  height: 600px; /* or adjust as needed */
+  padding: 10px;
+  background-color: #222; /* dark background for contrast */
+  overflow-x: auto; /* scroll if too many bars */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Making bars look more attractive */
+.array-bar {
+  width: 5px;
+  margin: 0 1px;
+  /* Use a vibrant gradient or a rainbow spectrum */
+  background: linear-gradient(180deg, #cc22b8, #98fe00);
+
+  /* Optional: rounded edges for softness */
+  border-radius: 40px;
+
+  /* Smooth height changes and glow effect */
+  transition: height 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+
+  /* Add a subtle glow on hover for interactivity */
+}
+.array-bar:hover {
+  box-shadow: 0 0 10px #df5f09, inset 0 0 5px rgba(84, 152, 186, 0.2);
+  transform: scale(1.02); /* a slight magnify effect on hover */
+}
